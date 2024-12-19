@@ -1,46 +1,48 @@
 #!/bin/bash
 
-# 创建根目录结构
-mkdir -p Developers/Using\ SOON
-mkdir -p Developers/Building\ on\ SOON/Environment\ Setup
-mkdir -p Developers/Building\ on\ SOON/Example
-mkdir -p Introduction/Core\ Technical\ Innovations
-mkdir -p Introduction/Super\ Adoption\ Stack
-mkdir -p Resources
+# 清空已有目录
+echo "清空现有的文件结构..."
+rm -rf developers introduction resources
+echo "已清空。"
 
-# 创建 mdx 文件
-touch Developers/Using\ SOON/Quick\ Start.mdx
-touch Developers/Using\ SOON/RPC\ Interface.mdx
-touch Developers/Using\ SOON/Network\ Info.mdx
-touch Developers/Using\ SOON/Wallet.mdx
-touch Developers/Using\ SOON/Faucet.mdx
-touch Developers/Using\ SOON/Explorer.mdx
+# 创建文件夹结构
+echo "生成新的文件结构..."
 
-touch Developers/Building\ on\ SOON/Environment\ Setup/Required\ Environments.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/Install\ Rust.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/Install\ Solana\ CLI.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/Install\ Anchor\ CLI.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/Install\ Node.js\ Yarn\ and\ pnpm.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/SOON\ RPC\ Configuration.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/New\ Key\ Pair.mdx
-touch Developers/Building\ on\ SOON/Environment\ Setup/Get\ Test\ Token\ via\ SOON\ Faucet.mdx
+# Developers 文件夹
+mkdir -p developers
+touch developers/quick-start.mdx
+touch developers/rpc-interface.mdx
+touch developers/network-info.mdx
+touch developers/wallet.mdx
+touch developers/faucet.mdx
+touch developers/explorer.mdx
+touch developers/required-environments.mdx
+touch developers/install-rust.mdx
+touch developers/install-solana-cli.mdx
+touch developers/install-anchor-cli.mdx
+touch developers/install-nodejs-yarn-and-pnpm.mdx
+touch developers/soon-rpc-configuration.mdx
+touch developers/new-key-pair.mdx
+touch developers/get-test-token-via-soon-faucet.mdx
+touch developers/deploy-smart-contracts.mdx
+touch developers/oracle.mdx
+touch developers/sqd.mdx
 
-touch Developers/Building\ on\ SOON/Example/Deploy\ Smart\ Contracts.mdx
-touch Developers/Building\ on\ SOON/Oracle.mdx
-touch Developers/Building\ on\ SOON/SQD.mdx
+# Introduction 文件夹
+mkdir -p introduction
+touch introduction/what-is-soon.mdx
+touch introduction/decoupled-svm.mdx
+touch introduction/merklization.mdx
+touch introduction/horizontal-scaling.mdx
+touch introduction/our-vision-sas.mdx
+touch introduction/soon-mainnet.mdx
+touch introduction/soon-stack.mdx
+touch introduction/intersoon.mdx
 
-touch Introduction/What\ is\ SOON.mdx
-touch Introduction/Core\ Technical\ Innovations/Decoupled\ SVM.mdx
-touch Introduction/Core\ Technical\ Innovations/Merklization.mdx
-touch Introduction/Core\ Technical\ Innovations/Horizontal\ Scaling.mdx
-touch Introduction/Super\ Adoption\ Stack/Our\ Vision\ —\ SAS.mdx
-touch Introduction/Super\ Adoption\ Stack/SOON\ Mainnet.mdx
-touch Introduction/Super\ Adoption\ Stack/SOON\ Stack.mdx
-touch Introduction/Super\ Adoption\ Stack/InterSOON.mdx
+# Resources 文件夹
+mkdir -p resources
+touch resources/developer-tools.mdx
+touch resources/blog.mdx
+touch resources/faq.mdx
 
-touch Resources/Developer\ Tools.mdx
-touch Resources/Blog.mdx
-touch Resources/FAQ.mdx
-
-echo "File structure has been created successfully."
-
+echo "文件结构已生成成功！"

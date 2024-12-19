@@ -6,6 +6,10 @@
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
+    "sidebar": {
+    "items": "border"
+  },
+   "layout": "sidenav",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -15,6 +19,22 @@
       "to": "#07C983"
     }
   },
+      "tabs": [
+        {
+        "name": "Developer",
+        "url": "using-soon",
+        "url": "building-on-soon"
+    },   
+    {
+        "name": "Content",
+        "url": "welcome"
+    },
+    {
+        "name": "Blog",
+        "url": "https://your-website.com/blog"
+    }
+      ],
+
   "navigation": [
     {
       "group": "Welcome",
@@ -26,6 +46,7 @@
         "welcome/why-svm"
       ]
     },
+
     {
       "group": "Using Soon",
       "pages": [
@@ -122,8 +143,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/soon",
-    "github": "https://github.com/soon",
-    "linkedin": "https://linkedin.com/company/soon"
+    "x": "https://x.com/soon_svm",
+    "discord": "https://discord.com/invite/soon-svm",
+    "medium":"https://medium.com/@soon_SVM"
   }
 }

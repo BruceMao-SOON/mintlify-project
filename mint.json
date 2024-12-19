@@ -1,41 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Soon Documentation",
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
-  },
-  "favicon": "/favicon.svg",
-  "sidebar": {
-    "items": "border"
-  },
-  "layout": "sidenav",
-  "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
-  },
-  "tabs": [
-    {
-      "name": "Developers",
-      "url": "using-soon"
-    },
-    {
-      "name": "Introduction",
-      "url": "introduction"
-    },
-    {
-      "name": "Resources",
-      "url": "resources"
-    }
-  ],
-{
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Soon Documentation",
+  "name": "Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -76,14 +41,19 @@
     {
       "group": "Building on SOON",
       "pages": [
-        "developers/required-environments",
-        "developers/install-rust",
-        "developers/install-solana-cli",
-        "developers/install-anchor-cli",
-        "developers/install-nodejs-yarn-and-pnpm",
-        "developers/soon-rpc-configuration",
-        "developers/new-key-pair",
-        "developers/get-test-token-via-soon-faucet",
+        {
+          "group": "Environment Setup",
+          "pages": [
+            "developers/required-environments",
+            "developers/install-rust",
+            "developers/install-solana-cli",
+            "developers/install-anchor-cli",
+            "developers/install-nodejs-yarn-and-pnpm",
+            "developers/soon-rpc-configuration",
+            "developers/new-key-pair",
+            "developers/get-test-token-via-soon-faucet"
+          ]
+        },
         "developers/deploy-smart-contracts",
         "developers/oracle",
         "developers/sqd"
@@ -121,10 +91,13 @@
       ]
     }
   ],
-
   "footerSocials": {
     "x": "https://x.com/soon_svm",
     "discord": "https://discord.com/invite/soon-svm",
     "medium": "https://medium.com/@soon_SVM"
   }
 }
+}
+
+
+  

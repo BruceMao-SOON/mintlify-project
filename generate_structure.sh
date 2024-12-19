@@ -1,11 +1,30 @@
 #!/bin/bash
 
-# 清空已有目录
-echo "清空现有的文件结构..."
-rm -rf developers introduction resources
-echo "已清空。"
+# 定义需要清空的文件夹列表
+folders_to_remove=(
+  "developers"
+  "introduction"
+  "resources"
+  "building-on-soon"
+  "using-soon"
+  "tech-architecture"
+  "welcome"
+  "Developers"
+  "Introduction"
+  "Resources"
+)
 
-# 创建文件夹结构
+# 清空现有的文件结构
+echo "清空现有的文件结构..."
+for folder in "${folders_to_remove[@]}"; do
+  if [ -d "$folder" ]; then
+    rm -rf "$folder"
+    echo "已删除 $folder"
+  fi
+done
+echo "现有文件结构已清空。"
+
+# 创建新的文件结构
 echo "生成新的文件结构..."
 
 # Developers 文件夹
@@ -45,4 +64,4 @@ touch resources/developer-tools.mdx
 touch resources/blog.mdx
 touch resources/faq.mdx
 
-echo "文件结构已生成成功！"
+echo "新的文件结构已生成成功！"

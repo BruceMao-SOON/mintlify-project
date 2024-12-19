@@ -1,28 +1,21 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Soon Documentation",
+  "name": "Documentation",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
-  "sidebar": {
-    "items": "border"
-  },
   "layout": "sidenav",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
+    "dark": "#0D9373"
   },
   "tabs": [
     {
       "name": "Developers",
-      "url": "using-soon"
+      "url": "developers"
     },
     {
       "name": "Introduction",
@@ -33,48 +26,78 @@
       "url": "resources"
     }
   ],
- "navigation": [
-  {
-    "group": "Using SOON",
-    "pages": [
-      "developers/using-soon/quick-start",
-      "developers/using-soon/rpc-interface",
-      "developers/using-soon/network-info",
-      "developers/using-soon/wallet",
-      "developers/using-soon/faucet",
-      "developers/using-soon/explorer"
-    ]
-  },
-  {
-    "group": "Building on SOON",
-    "pages": [
-      {
-        "group": "Environment Setup",
-        "pages": [
-          "developers/building-on-soon/environment-setup/required-environments",
-          "developers/building-on-soon/environment-setup/install-rust",
-          "developers/building-on-soon/environment-setup/install-solana-cli",
-          "developers/building-on-soon/environment-setup/install-anchor-cli",
-          "developers/building-on-soon/environment-setup/install-nodejs-yarn-and-pnpm",
-          "developers/building-on-soon/environment-setup/soon-rpc-configuration",
-          "developers/building-on-soon/environment-setup/new-key-pair",
-          "developers/building-on-soon/environment-setup/get-test-token-via-soon-faucet"
-        ]
-      },
-      {
-        "group": "Example",
-        "pages": [
-          "developers/building-on-soon/example/deploy-smart-contracts"
-        ]
-      },
-      "developers/building-on-soon/oracle",
-      "developers/building-on-soon/sqd"
-    ]
-  }
-],
+  "navigation": [
+    {
+      "group": "Using SOON",
+      "pages": [
+        "developers/quick-start",
+        "developers/rpc-interface",
+        "developers/network-info",
+        "developers/wallet",
+        "developers/faucet",
+        "developers/explorer"
+      ]
+    },
+    {
+      "group": "Building on SOON",
+      "pages": [
+        {
+          "group": "Environment Setup",
+          "pages": [
+            "developers/required-environments",
+            "developers/install-rust",
+            "developers/install-solana-cli",
+            "developers/install-anchor-cli",
+            "developers/install-nodejs-yarn-and-pnpm",
+            "developers/soon-rpc-configuration",
+            "developers/new-key-pair",
+            "developers/get-test-token-via-soon-faucet"
+          ]
+        },
+        "developers/deploy-smart-contracts",
+        "developers/oracle",
+        "developers/sqd"
+      ]
+    },
+    {
+      "group": "What is SOON?",
+      "pages": [
+        "introduction/what-is-soon"
+      ]
+    },
+    {
+      "group": "Core Technical Innovations",
+      "pages": [
+        "introduction/decoupled-svm",
+        "introduction/merklization",
+        "introduction/horizontal-scaling"
+      ]
+    },
+    {
+      "group": "Super Adoption Stack",
+      "pages": [
+        "introduction/our-vision-sas",
+        "introduction/soon-mainnet",
+        "introduction/soon-stack",
+        "introduction/intersoon"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/developer-tools",
+        "resources/blog",
+        "resources/faq"
+      ]
+    }
+  ],
   "footerSocials": {
     "x": "https://x.com/soon_svm",
     "discord": "https://discord.com/invite/soon-svm",
     "medium": "https://medium.com/@soon_SVM"
   }
 }
+
+
+
+  

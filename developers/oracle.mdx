@@ -3,7 +3,10 @@ title: "Apro Oracle Guide"
 sidebarTitle: "Oracle"
 mode: "wide"
 ---
+<<<<<<< HEAD
 # APRO Guide
+=======
+>>>>>>> 32be9650ca2921a41826f40d2aaf7fcf4b77abc2
 
 APRO Oracle Data Pull is a pull mode oracle product for those who require low-latency data feed service.
 
@@ -135,3 +138,16 @@ GET /api/soon/ws?feedIDs=\<feedID1>,\<feedID2>,...
 | 401 Unauthorized User                  | <p>This error is triggered when:</p><ul><li>Authentication fails, typically because the HMAC signature provided by the client doesn't match the one expected by the server.</li><li>A user requests access to a feed without the appropriate permission or that does not exist.</li></ul>                                                     |
 | 500 Internal Server                    | Indicates an unexpected condition encountered by the server, preventing it from fulfilling the request. This error typically points to issues on the server side.                                                                                                                                                                             |
 | 206 Missing data (/bulk endpoint only) | Indicates that at least one feed ID data is missing from the report. E.g., you requested a report for feed IDs \<feedID1>, \<feedID2>, and \<feedID3> at a given timestamp. If data for \<feedID2> is missing from the report (not available yet at the specified timestamp), you get \[\<feedID1 data>, \<feedID3 data>] and a 206 response. |
+<<<<<<< HEAD
+=======
+
+
+
+
+
+## An Example using APRO
+
+To help developers quickly adopt the APRO oracle service with the SOON Protocol, we've created an example repository:
+
+{% embed url="https://github.com/soonlabs/apro-soon-example" %}
+>>>>>>> 32be9650ca2921a41826f40d2aaf7fcf4b77abc2

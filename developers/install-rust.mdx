@@ -1,0 +1,29 @@
+---
+title: "Install Rust"
+sidebarTitle: "Install Rust"
+mode: "wide"
+---
+
+Solana programs are primarily written in the **Rust.** This guide will focus on setting up Rust.
+
+Rust's recommended installation method is **Rustup**, which manages Rust versions and associated tools.
+
+To install Rust, run the following command in your terminal:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+```
+
+This command downloads and installs Rust along with rustup. Once the installation is complete, verify that Rust has been installed correctly by checking the version:
+
+```bash
+rustc --version
+```
+
+You should see output similar to the following:
+
+```bash
+rustc 1.81.0 (eeb90cda1 2024-09-04)
+```
+
+At this point, Rust is successfully installed.

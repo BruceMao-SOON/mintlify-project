@@ -1,5 +1,44 @@
 ---
-title: "Set Up the Development Environment"
-sidebarTitle: "Required Environments"
+title: "Install Solana CLI"
+sidebarTitle: "Install Solana CLI"
 mode: "wide"
 ---
+The **Solana Command-Line Interface (CLI)** provides the necessary tools to build, deploy, and interact with Solana programs on the blockchain. It is an essential tool for any Solana developer.
+
+To install the Solana CLI, run the following command in your terminal:
+
+```bash
+sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
+```
+
+You can replace the `stable` keyword with a specific release version if you need a particular version, for example, `v2.0.3`. Alternatively, you can choose from one of the three symbolic channel names:
+
+* **stable**: The latest stable release.
+* **beta**: Pre-release version with newer features.
+* **edge**: The latest but potentially unstable features.
+
+If this is your first time installing the Solana CLI, you may be prompted to add a **PATH** environment variable. After installation, you can either close and reopen your terminal or run the following command to update the path in your existing session:
+
+```bash
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+```
+
+At this stage, Solana CLI should be fully installed and ready for use. You can confirm the installation by running:
+
+```bash
+solana --version
+```
+
+During the installation of SOON CLI, you may need to install the GCC compiler toolchain as well.
+
+Use the following command to install
+
+```bash
+sudo apt install gcc
+```
+
+Use the following command to check installation.
+
+```bash
+gcc --version
+```

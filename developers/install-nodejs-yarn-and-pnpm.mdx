@@ -1,5 +1,78 @@
 ---
-title: "Set Up the Development Environment"
-sidebarTitle: "Required Environments"
+title: "Install Node.js, Yarn & pnpm"
+sidebarTitle: "Install Node.js, Yarn & pnpm"
 mode: "wide"
 ---
+
+In order to run the default Anchor project test file, which is written in **TypeScript**, you will need **Node.js** and **Yarn**. By default, when you create a new Anchor project using the `anchor init` command, it generates a TypeScript-based test suite. Alternatively, if you prefer a Rust-based test setup, you can specify it during initialization with `anchor init --test-template rust`.
+
+#### Node.js Installation
+
+The recommended method for installing **Node.js** is by using the **Node Version Manager (nvm)**. This allows you to manage different Node.js versions easily, which is especially helpful when working on multiple projects with different Node.js version requirements.
+
+1.  Install **nvm** by running the following command in your terminal:
+
+    ```bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+    ```
+2. After the installation, restart your terminal for the changes to take effect.
+3.  Verify that `nvm` was installed correctly by running:
+
+    ```bash
+    command -v nvm
+    ```
+4.  Once `nvm` is confirmed to be installed, use it to install the latest version of Node.js by running:
+
+    ```bash
+    nvm install node
+    ```
+5.  Verify the Node.js installation by checking the version:
+
+    ```bash
+    node --version
+    ```
+6.  You should see output similar to:
+
+    ```bash
+    v22.9.0
+    ```
+
+#### Yarn and pnpm Installation
+
+Once Node.js is installed, the next step is to install **Yarn**, which is a package manager commonly used with JavaScript and TypeScript projects. You can do this by running:
+
+```bash
+npm install -g yarn
+```
+
+You can verify that Yarn was successfully installed by checking its version:
+
+```bash
+yarn --version
+```
+
+You should see output similar to:
+
+```bash
+1.22.22
+```
+
+You can install pnpm by running:
+
+```bash
+npm install -g pnpm
+```
+
+You can verify that pnpm was successfully installed by checking its version:
+
+```bash
+pnpm --version
+```
+
+You should see output similar to:
+
+```bash
+9.11.0
+```
+
+

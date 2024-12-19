@@ -7,7 +7,6 @@ APRO Oracle Data Pull is a pull mode oracle product for those who require low-la
 
 Following process chart is how pull mode works:
 
-<figure><img src="../../.gitbook/assets/image (74).png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Program IDs
 
@@ -40,7 +39,7 @@ GET /api/soon/reports?feedID=\<feedID>\&timestamp=\<timestamp>
 
 **Sample response**
 
-<figure><img src="../../.gitbook/assets/image (75).png" alt="" width="563"><figcaption></figcaption></figure>
+
 
 ### Return a single report with the latest timestamp
 
@@ -114,16 +113,10 @@ GET /api/soon/ws?feedIDs=\<feedID1>,\<feedID2>,...
 
 **Sample response**
 
-<figure><img src="../../.gitbook/assets/image (81).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Error response codes
 
-| Status Code                            | Description                                                                                                                                                                                                                                                                                                                                   |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 400 Bad Request                        | <p>This error is triggered when:</p><ul><li>There is any missing/malformed query argument.</li><li>Required headers are missing or provided with incorrect values.</li></ul>                                                                                                                                                                  |
-| 401 Unauthorized User                  | <p>This error is triggered when:</p><ul><li>Authentication fails, typically because the HMAC signature provided by the client doesn't match the one expected by the server.</li><li>A user requests access to a feed without the appropriate permission or that does not exist.</li></ul>                                                     |
-| 500 Internal Server                    | Indicates an unexpected condition encountered by the server, preventing it from fulfilling the request. This error typically points to issues on the server side.                                                                                                                                                                             |
-| 206 Missing data (/bulk endpoint only) | Indicates that at least one feed ID data is missing from the report. E.g., you requested a report for feed IDs \<feedID1>, \<feedID2>, and \<feedID3> at a given timestamp. If data for \<feedID2> is missing from the report (not available yet at the specified timestamp), you get \[\<feedID1 data>, \<feedID3 data>] and a 206 response. |
+|
 
 
 

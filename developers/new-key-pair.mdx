@@ -1,5 +1,34 @@
 ---
-title: "Set Up the Development Environment"
-sidebarTitle: "Required Environments"
+title: "New Key Pair"
+sidebarTitle: "New Key Pair"
 mode: "wide"
 ---
+If this is your first time using the **Solana CLI**, you will need to generate a new key pair. This key pair will serve as your identity when interacting with the **SOON Testnet**. To generate a new keypair, run the following command:
+
+```bash
+solana-keygen new
+```
+
+You should see output similar to:
+
+```bash
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+BIP39 Passphrase (empty for none):
+
+Wrote new keypair to /home/xxxxx
+============================================================================
+pubkey: AEG18Z4ESnzEh1rcgUHk1dLwVY4LyfZ6TWzgShGry5UN
+============================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+```
+
+#### Important Security Considerations
+
+* **Private Key Security**: The private key in your keypair should **never be shared** or exposed. It grants access to your account and the ability to sign transactions on your behalf. Always keep this file secure.
+* **Public Key**: The public key, derived from the keypair, will serve as your wallet address and can be shared with others to receive funds or interact with contracts.

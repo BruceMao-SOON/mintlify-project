@@ -30,8 +30,8 @@
     {
       "group": "Using SOON",
       "pages": [
-        "developers/quick-Start",
-        "developers/RPC-interface",
+        "developers/quick-start",
+        "developers/rpc-interface",
         "developers/network-info",
         "developers/wallet",
         "developers/faucet",

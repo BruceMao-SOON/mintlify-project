@@ -15,18 +15,7 @@
       "to": "#07C983"
     }
   },
-  "navigation": [
-    {
-      "group": "Welcome",
-      "pages": [
-        "welcome/what-is-soon/core-technologies",
-        "welcome/what-is-soon/features",
-        "welcome/what-is-soon/roadmap",
-        "welcome/super-adoption-stack-sas",
-        "welcome/why-svm"
-      ]
-    },
-    "tabs": [
+      "tabs": [
     {
         "name": "API References",
         "url": "api-references"
@@ -39,10 +28,22 @@
         "name": "Blog",
         "url": "https://your-website.com/blog"
     }
-],
-    "primaryTab": {
+  ],
+      "primaryTab": {
     "name": "Home"
-}
+  }
+
+  "navigation": [
+    {
+      "group": "Welcome",
+      "pages": [
+        "welcome/what-is-soon/core-technologies",
+        "welcome/what-is-soon/features",
+        "welcome/what-is-soon/roadmap",
+        "welcome/super-adoption-stack-sas",
+        "welcome/why-svm"
+      ]
+    },
 
     {
       "group": "Using Soon",

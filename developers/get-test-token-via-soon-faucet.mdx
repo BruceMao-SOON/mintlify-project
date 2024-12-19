@@ -3,3 +3,29 @@ title: "Set Up the Development Environment"
 sidebarTitle: "Required Environments"
 mode: "wide"
 ---
+SOON Faucet Devnet can help developers directly receive sol for testing without the need for bridge assets.
+
+## Get Your Airdrop $SOL through CLI
+
+* Make sure you have changed the RPC to [https://rpc.fc.devnet.soo.network/rpc](https://rpc.fc.devnet.soo.network/rpc)
+
+If you don't know the config of network, use the command below to check:
+
+```bash
+solana config get
+```
+
+Set rpc to Faucet Devnet through the command below:
+
+```bash
+solana config set --url https://rpc.fc.devnet.soo.network/rpc
+```
+
+Use the command below to get $SOL airdrop:
+
+```bash
+solana airdrop 1 AEG18Z4ESnzEh1rcgUHk1dLwVY4LyfZ6TWzgShGry5UN --url https://rpc.fc.devnet.soo.network/rpc
+```
+
+* Please replace the address in the command with your own address before using it.
+* The user could get 10 SOL at max every 10 hours per Address and per IP.

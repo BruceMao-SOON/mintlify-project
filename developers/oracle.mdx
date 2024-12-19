@@ -29,13 +29,12 @@ All routes require the following two headers for user authentication:
 
 **Endpoint**
 
-/api/soon/reports
+
 
 
 
 **Sample request**
 
-GET /api/soon/reports?feedID=\<feedID>\&timestamp=\<timestamp>
 
 **Sample response**
 
@@ -45,7 +44,7 @@ GET /api/soon/reports?feedID=\<feedID>\&timestamp=\<timestamp>
 
 **Endpoint**
 
-/api/soon/reports/latest
+
 
 | Type     | Parameter(s)                    |
 | -------- | ------------------------------- |
@@ -53,47 +52,42 @@ GET /api/soon/reports?feedID=\<feedID>\&timestamp=\<timestamp>
 
 **Sample request**
 
-GET /api/soon/reports/latest?feedID=\<feedID>
+
 
 **Sample response**
 
-<figure><img src="../../.gitbook/assets/image (76).png" alt="" width="563"><figcaption></figcaption></figure>
+
 
 ### Return a report for multiple FeedIDs at a given timestamp
 
 **Endpoint**
 
-/api/soon/reports/bulk
+
 
 
 
 **Sample request**
 
-GET /api/soon/reports/bulk?feedIDs=\<FeedID1>,\<FeedID2>,...\&timestamp=\<timestamp>
 
-GET /api/soon/reports/bulk?feedIDs=\<FeedID1>,\<FeedID2>,...\&startTimestamp=\<startTimestamp>
 
 **Sample response**
 
-<figure><img src="../../.gitbook/assets/image (77).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (79).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Return multiple sequential reports for a single FeedID, starting at a given timestamp
 
 **Endpoint**
 
-/api/soon/reports/page
 
 
 
 **Sample request**
 
-GET /api/soon/reports/page?feedID=\<FeedID>\&startTimestamp=\<StartTimestamp>\&limit=\<Limit>
+
 
 **Sample response**
 
-<figure><img src="../../.gitbook/assets/image (80).png" alt="" width="563"><figcaption></figcaption></figure>
+
 
 ### WebSocket Connection
 
@@ -109,7 +103,6 @@ Establish a streaming WebSocket connection that sends reports for the given feed
 
 **Sample request**
 
-GET /api/soon/ws?feedIDs=\<feedID1>,\<feedID2>,...
 
 **Sample response**
 

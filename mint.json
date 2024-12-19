@@ -6,10 +6,10 @@
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
-    "sidebar": {
+  "sidebar": {
     "items": "border"
   },
-   "layout": "sidenav",
+  "layout": "sidenav",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -33,7 +33,6 @@
       "url": "resources"
     }
   ],
-
   "navigation": [
     {
       "group": "Using SOON",
@@ -103,11 +102,10 @@
         "resources/faq"
       ]
     }
-  ]
-},
-
+  ],
   "footerSocials": {
     "x": "https://x.com/soon_svm",
     "discord": "https://discord.com/invite/soon-svm",
-    "medium":"https://medium.com/@soon_SVM"
+    "medium": "https://medium.com/@soon_SVM"
   }
+}

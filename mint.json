@@ -34,76 +34,77 @@
     }
   ],
 
-"navigation": [
-  {
-    "group": "Using SOON",
-    "pages": [
-      "developers/using-soon/quick-start",
-      "developers/using-soon/rpc-interface",
-      "developers/using-soon/network-info",
-      "developers/using-soon/wallet",
-      "developers/using-soon/faucet",
-      "developers/using-soon/explorer"
-    ]
-  },
-  {
-    "group": "Building on SOON",
-    "pages": [
-      {
-        "group": "Environment Setup",
-        "pages": [
-          "developers/building-on-soon/environment-setup/required-environments",
-          "developers/building-on-soon/environment-setup/install-rust",
-          "developers/building-on-soon/environment-setup/install-solana-cli",
-          "developers/building-on-soon/environment-setup/install-anchor-cli",
-          "developers/building-on-soon/environment-setup/install-nodejs-yarn-and-pnpm",
-          "developers/building-on-soon/environment-setup/soon-rpc-configuration",
-          "developers/building-on-soon/environment-setup/new-key-pair",
-          "developers/building-on-soon/environment-setup/get-test-token-via-soon-faucet"
-        ]
-      },
-      {
-        "group": "Example",
-        "pages": [
-          "developers/building-on-soon/example/deploy-smart-contracts"
-        ]
-      },
-      "developers/building-on-soon/oracle",
-      "developers/building-on-soon/sqd"
-    ]
-  },
-  {
-    "group": "What is SOON?",
-    "pages": [
-      "introduction/what-is-soon"
-    ]
-  },
-  {
-    "group": "Core Technical Innovations",
-    "pages": [
-      "introduction/core-technical-innovations/decoupled-svm",
-      "introduction/core-technical-innovations/merklization",
-      "introduction/core-technical-innovations/horizontal-scaling"
-    ]
-  },
-  {
-    "group": "Super Adoption Stack",
-    "pages": [
-      "introduction/super-adoption-stack/our-vision-sas",
-      "introduction/super-adoption-stack/soon-mainnet",
-      "introduction/super-adoption-stack/soon-stack",
-      "introduction/super-adoption-stack/intersoon"
-    ]
-  },
-  {
-    "group": "Resources",
-    "pages": [
-      "resources/developer-tools",
-      "resources/blog",
-      "resources/faq"
-    ]
-  }
-],
+  "navigation": [
+    {
+      "group": "Using SOON",
+      "pages": [
+        "developers/using-soon/quick-start",
+        "developers/using-soon/rpc-interface",
+        "developers/using-soon/network-info",
+        "developers/using-soon/wallet",
+        "developers/using-soon/faucet",
+        "developers/using-soon/explorer"
+      ]
+    },
+    {
+      "group": "Building on SOON",
+      "pages": [
+        {
+          "group": "Environment Setup",
+          "pages": [
+            "developers/building-on-soon/environment-setup/required-environments",
+            "developers/building-on-soon/environment-setup/install-rust",
+            "developers/building-on-soon/environment-setup/install-solana-cli",
+            "developers/building-on-soon/environment-setup/install-anchor-cli",
+            "developers/building-on-soon/environment-setup/install-nodejs-yarn-and-pnpm",
+            "developers/building-on-soon/environment-setup/soon-rpc-configuration",
+            "developers/building-on-soon/environment-setup/new-key-pair",
+            "developers/building-on-soon/environment-setup/get-test-token-via-soon-faucet"
+          ]
+        },
+        {
+          "group": "Example",
+          "pages": [
+            "developers/building-on-soon/example/deploy-smart-contracts"
+          ]
+        },
+        "developers/building-on-soon/oracle",
+        "developers/building-on-soon/sqd"
+      ]
+    },
+    {
+      "group": "What is SOON?",
+      "pages": [
+        "introduction/what-is-soon"
+      ]
+    },
+    {
+      "group": "Core Technical Innovations",
+      "pages": [
+        "introduction/core-technical-innovations/decoupled-svm",
+        "introduction/core-technical-innovations/merklization",
+        "introduction/core-technical-innovations/horizontal-scaling"
+      ]
+    },
+    {
+      "group": "Super Adoption Stack",
+      "pages": [
+        "introduction/super-adoption-stack/our-vision-sas",
+        "introduction/super-adoption-stack/soon-mainnet",
+        "introduction/super-adoption-stack/soon-stack",
+        "introduction/super-adoption-stack/intersoon"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/developer-tools",
+        "resources/blog",
+        "resources/faq"
+      ]
+    }
+  ]
+},
 
   "footerSocials": {
     "x": "https://x.com/soon_svm",

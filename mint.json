@@ -17,8 +17,9 @@
   },
       "tabs": [
         {
-        "name": "Documentation",
+        "name": "Developer",
         "url": "using-soon"
+        "url": "building-on-soon"
     },   
     {
         "name": "Content",

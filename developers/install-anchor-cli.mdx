@@ -1,5 +1,67 @@
 ---
-title: "Set Up the Development Environment"
-sidebarTitle: "Required Environments"
+title: "Install Anchor CLI"
+sidebarTitle: "Install Anchor CLI"
 mode: "wide"
 ---
+**Anchor** is a popular framework for developing Solana programs, leveraging Rust macros to make the process simpler and more efficient.
+
+There are two main ways to install the Anchor CLI and related tools:
+
+1. **Using Anchor Version Manager (AVM)** – **Recommended**: AVM simplifies the process of installing and managing different Anchor versions, making updates easier in the future. We will present this way step by step.
+2. **Without AVM** – A more manual method that makes version updates less convenient.
+
+The **AVM** allows you to easily install, switch between, and update different versions of Anchor on your system. Install AVM with the following command:
+
+```bash
+cargo install --git https://github.com/coral-xyz/anchor avm --force
+```
+
+Test the installation to ensure AVM is correctly installed and accessible:
+
+```bash
+avm --version
+```
+
+Install the latest version of the Anchor CLI using AVM:
+
+```bash
+avm install latest
+avm use latest
+```
+
+If you want to install a specific version, replace `latest` with the version number:
+
+```bash
+avm install 0.29.1
+avm use 0.29.1
+```
+
+Don’t forget to run the `avm use` command to declare which version of the Anchor CLI should be used on your system.
+
+Verify the installation was successful by checking the Anchor CLI version:
+
+```bash
+anchor --version
+```
+
+You should see output similar to:
+
+```bash
+anchor-cli 0.30.1
+```
+
+### Common Errors
+
+* **Rust Version Error (`Box<_>` type annotation error)**: If you encounter the following error during installation:
+
+```bash
+error[E0282]: type annotations needed for `Box<_>`
+```
+
+This error can occur with certain versions of Rust. To resolve this, switch to Rust version `1.79.0` and try the installation again:
+
+* **Permission Denied (Linux/WSL linker error)**: When installing Anchor CLI on **Linux** or **WSL**, you may encounter this error:
+
+```bash
+rustup default 1.79.0
+```

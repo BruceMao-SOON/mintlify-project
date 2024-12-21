@@ -8,8 +8,8 @@
   "favicon": "/favicon.svg",
   "layout": "sidenav",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
+    "primary": "#CC0E3D",
+    "light": "#CC0E3D",
     "dark": "#0D9373"
   },
   "tabs": [
@@ -97,7 +97,3 @@
     "medium": "https://medium.com/@soon_SVM"
   }
 }
-
-
-
-  
